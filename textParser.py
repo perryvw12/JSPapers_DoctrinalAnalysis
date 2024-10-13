@@ -1,5 +1,3 @@
-import sys
-
 def textparser(word_map, file_location):
     with open(file_location, "r", encoding="utf-8") as text:
             for line in text:
@@ -10,5 +8,3 @@ def textparser(word_map, file_location):
                     else:
                         word_map[word] = 1
             return word_map
-
-
