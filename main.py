@@ -14,3 +14,4 @@ dfLetter1 = framer(letter1)
 dfLetter2 = framer(letter2)
 
 exporter(dfLetter1, "letter1.csv")
+exporter(dfLetter2, "letter2.csv")

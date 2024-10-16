@@ -3,6 +3,7 @@ def textparser(word_map, file_location):
             for line in text:
                 words = line.split(" ")
                 for word in words:
+                    word = word.lower()
                     if word in word_map:
                         word_map[word] += 1
                     else:
