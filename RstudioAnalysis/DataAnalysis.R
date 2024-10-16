@@ -1,8 +1,8 @@
 library(tidyverse)
 
 letter1 = arrange(letter1, desc(count)) |>
-  filter(word != c("and", "the", "of", "to", "that", "we", "a", "be", "in", "our"))
+  mutate(word = str_sub(word, ".", ""))
 
-ggplot(data=letter1) +
-  geom_boxplot
+letter2 = arrange(letter2, desc(count)) |>
+  mutate(word = str_sub(word, ".", ""))
 
