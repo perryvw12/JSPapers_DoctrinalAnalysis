@@ -25,4 +25,5 @@ compared = anti_join(letter1Data, letter2Data, by="word")
 
 ggplot(data = combined, aes(x=word, y=value, fill=letter)) +
   geom_col(position="dodge") +
-  theme_bw()
+  theme_bw(base_size=18) +
+  labs(x="Word", y="Count", fill="")
