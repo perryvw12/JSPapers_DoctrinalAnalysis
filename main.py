@@ -13,5 +13,5 @@ textparser(letter2, file2)
 dfLetter1 = framer(letter1)
 dfLetter2 = framer(letter2)
 
-exporter(dfLetter1, "letter1.csv")
-exporter(dfLetter2, "letter2.csv")
+exporter(dfLetter1, "RstudioAnalysis/letter1.csv")
+exporter(dfLetter2, "RstudioAnalysis/letter2.csv")

@@ -1,4 +1,5 @@
 import string
+import re
 
 
 def textparser(word_map, file_location):
@@ -8,6 +9,7 @@ def textparser(word_map, file_location):
                 for word in words:
                     word = word.lower()
                     word = word.translate(str.maketrans("", "", string.punctuation))
+                    word = re.sub(r'([a-z])\d+\b', r'\1', word)
                     if word in word_map:
                         word_map[word] += 1
                     else:
